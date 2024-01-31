@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmx with Flask</title>
+    <script src="https://unpkg.com/htmx.org@1.7.3/dist/htmx.js"></script>
+</head>
+<body>
+
+    <!-- Include header component -->
+    {% include 'components/header.html' %}
+
+    <h1 id="content">Hello, Jensen!</h1>
+
+    <!-- Include footer component -->
+    {% include 'components/footer.html' %}
+
+</body>
+</html>
+
