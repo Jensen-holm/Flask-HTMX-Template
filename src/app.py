@@ -10,11 +10,20 @@ app = Flask(
 )
 
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    return render_template(
+        "login.html",
+    )
+
+
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template(
+        "index.html",
+        name="Emily",
+    )
 
 
 if __name__ == "__main__":
     app.run()
-
