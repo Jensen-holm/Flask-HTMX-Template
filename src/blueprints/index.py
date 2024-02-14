@@ -9,6 +9,7 @@ index = Blueprint(
     __name__,
 )
 
+
 @index.route("/", methods=["GET"])
 def idx():
     return render_template("index.html")

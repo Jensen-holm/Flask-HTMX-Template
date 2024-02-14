@@ -21,6 +21,7 @@ class BlueprintApp(Flask):
             assert isinstance(bp, Blueprint)
             self.register_blueprint(bp)
 
+
 app = BlueprintApp(
     import_name=__name__,
     template_folder="templates",

@@ -9,6 +9,7 @@ login = Blueprint(
     __name__,
 )
 
+
 @login.route("/login", methods=["GET", "POST"])
 def user_login():
     return render_template("login.html")
