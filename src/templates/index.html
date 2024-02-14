@@ -6,16 +6,19 @@
         <title>Index</title>
         <script src="https://unpkg.com/htmx.org@1.7.3/dist/htmx.js"></script>
     </head>
+    <!-- Include header component -->
+    {% include 'components/header.html' %}
 
     <body>
-        <!-- Include header component -->
-        {% include 'components/header.html' %}
+        <div>
+            <a href="/login">Go to Login</a>
+        </div>
 
-        <a href="/login">Go to Login</a>
-
-        <h1 id="content">Hello, {{ name }}!</h1>
-
-        <!-- Include footer component -->
-        {% include 'components/footer.html' %}
+        <div>
+            <h1 id="content">Hello, {{ name }}!</h1>
+        </div>
     </body>
+
+    <!-- Include footer component -->
+    {% include 'components/footer.html' %}
 </html>
