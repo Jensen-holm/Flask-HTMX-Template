@@ -1,15 +1,7 @@
 from flask import Flask, render_template, Blueprint
 import os
 
-from src.blueprints import blueprints
-
-
-app = Flask(
-    __name__,
-    template_folder="templates",
-    static_folder="css",
-    static_url_path="/src/assets",
-)
+from src.blueprints import BLUEPRINTS
 
 
 class BlueprintApp(Flask):
@@ -33,7 +25,7 @@ app = BlueprintApp(
     import_name=__name__,
     template_folder="templates",
     static_url_path="/src/assets",
-    blueprints=blueprints,
+    blueprints=BLUEPRINTS,
 )
 
 

@@ -3,7 +3,7 @@ from src.blueprints.index import index
 
 from flask import Blueprint
 
-blueprints: list[Blueprint] = [
+BLUEPRINTS: list[Blueprint] = [
     login,
     index,
 ]
